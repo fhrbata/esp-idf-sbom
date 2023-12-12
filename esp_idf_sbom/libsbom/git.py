@@ -5,6 +5,7 @@
 Simple module for git interaction.
 """
 
+import os
 from typing import Any, Dict, List, Optional
 
 from esp_idf_sbom.libsbom import utils
@@ -198,18 +199,15 @@ def get_tree_sha(fullpath: str) -> Optional[str]:
         return None
     relpath = utils.prelpath(fullpath, gitwdir)
     if relpath == '.':
-        # The fullpath is a git root, probably submodule, so get the HEAD SHA
-        output = _helper(['git', '-C', gitwdir, 'rev-parse', 'HEAD'])
-    else:
-        output = _helper(['git', '-C', gitwdir, 'ls-tree', 'HEAD', relpath])
+        relpath = os.path.basename(gitwdir)
+        gitwdir = os.path.dirname(gitwdir)
+
+    output = _helper(['git', '-C', gitwdir, 'ls-tree', 'HEAD', relpath])
 
     if not output:
         return None
     splitted = output.split()
-    if len(splitted) > 1:
-        return splitted[2]
-
-    return splitted[0]
+    return splitted[2]
 
 
 def get_branch(git_wdir: str) -> str:
