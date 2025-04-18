@@ -1,52 +1,53 @@
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #1a0dab;
-  --header-footer-bg: #f1f1f1;
+	--bg-color: #ffffff;
+	--text-color: #000000;
+	--link-color: #1a0dab;
+	--header-footer-bg: #f1f1f1;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --link-color: #8ab4f8;
-    --header-footer-bg: #1f1f1f;
-  }
+	:root {
+		--bg-color: #121212;
+		--text-color: #e0e0e0;
+		--link-color: #8ab4f8;
+		--header-footer-bg: #1f1f1f;
+	}
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
+	color: var(--link-color);
+	text-decoration: none;
 }
 
 .site-header {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--header-footer-bg);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: var(--header-footer-bg);
 }
 
-.site-header .logo {
-  height: 40px;
-  margin-right: 1rem;
-  width: auto;
+.site-title {
+	flex: 1;
+	text-align: center;
+	margin: 0;
+	font-size: 1.5rem;
 }
 
-.site-header h1 {
-  color: #8B0000;
-  margin: 0;
-  font-size: 1.5rem;
+.logo {
+	height: 40px;
+	width: auto;
 }
 
 main {
-  padding: 2rem;
+	padding: 2rem;
 }
 
