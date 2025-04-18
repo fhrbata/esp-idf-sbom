@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body>
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer>
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ page.title }} | {{ site.title }}</title>
+		<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+	</head>
+	<body>
+		<header>
+			<div class="site-header">
+				<img src="{{ '/assets/images/espressif-logo.png' | relative_url }}" alt="Espressif Logo" class="logo">
+				<h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+			</div>
+		</header>
+		<main>
+			{{ content }}
+		</main>
+	</body>
 </html>
 
