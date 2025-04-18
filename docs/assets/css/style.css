@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a0dab;
+  --header-footer-bg: #f1f1f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #8ab4f8;
+    --header-footer-bg: #1f1f1f;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+header, footer {
+  background-color: var(--header-footer-bg);
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+

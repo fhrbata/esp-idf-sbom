@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # This should be the TITLE
 
 # you you
