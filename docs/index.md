@@ -16,4 +16,5 @@ title: Home
 | Row 1    | Data     | More     |
 | Row 2    | Data     | More     |
 
-$${\color{red}Welcome \space \color{lightblue}To \space \color{lightgreen}{github}}$$
+# $${\color{red}Red}$$
+$${\color{red}Red}$$
