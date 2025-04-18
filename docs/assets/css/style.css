@@ -37,7 +37,8 @@ a {
 .site-title {
 	text-align: left;
 	margin: 0;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	link-color: #8B0000;
 }
 
 .logo {
