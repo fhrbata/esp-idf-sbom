@@ -4,6 +4,8 @@
 
 ## [v5.4.1](esp-idf-v5.4.1.md)
 
+## [v5.0.5](sbom-esp-idf-v5.0.5.md)
+
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Row 1    | Data     | More     |
